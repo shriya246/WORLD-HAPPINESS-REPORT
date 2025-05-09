@@ -2,7 +2,7 @@ import pandas as pd
 import plotly.express as px
 import preswald
 
-df = pd.read_csv("data/sample1.csv")
+df = pd.read_csv("sample1.csv")
 Filter_df = df.sort_values(by="Score", ascending=False).head(20)
 fig = px.bar(
     Filter_df,
